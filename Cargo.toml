@@ -17,4 +17,4 @@ anarchist-readable-name-generator-lib = "0.1.2"
 clap_complete = "4.5.42"
 clap = { version = "4.5.26", features = ["derive", "cargo", "wrap_help", "env", "unicode" ] }
 miette = { version = "7.4.0", features = ["fancy"] }
-thiserror = "1.0.69"
+thiserror = "2.0.0"
