@@ -4,7 +4,7 @@ FROM goreleaser/nfpm@sha256:b842811abdab5c694f69f04683abaac8298086809d939e7e94a1
 FROM --platform=$BUILDPLATFORM tonistiigi/xx@sha256:923441d7c25f1e2eb5789f82d987693c47b8ed987c4ab3b075d6ed2b5d6779a3 AS xx
 ARG TARGETPLATFORM
 
-FROM --platform=$BUILDPLATFORM rust:alpine@sha256:12360d0b997278c4bc8ccde026dba3260ccc8320352f71392680a4c5dd1fc824 AS builder
+FROM --platform=$BUILDPLATFORM rust:alpine@sha256:fdff417c3845c92360b439382f7d6dabca6c998f59c8dce6cd2a16a2e9e85498 AS builder
 ARG BUILDKIT_SBOM_SCAN_STAGE=true
 RUN apk add clang lld openssl-dev curl bash
 # copy xx scripts to your build stage
